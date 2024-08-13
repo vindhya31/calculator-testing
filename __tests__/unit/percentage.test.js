@@ -3,7 +3,7 @@ import percentage from "../../src/modules/calculation/util/percentage";
 describe("percentage tests", function () {
   // Functional test
   it("should result in 50 when given 3 and 6", function () {
-    expect(percentage(3, 6)).toBe(40);
+    expect(percentage(3, 6)).toBe(50);
   });
 
   // Regression tests
