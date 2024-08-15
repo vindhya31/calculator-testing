@@ -4,6 +4,7 @@ name: CI
 on: push
 
 # what to do when triggered
+
 jobs:
   build:
     runs-on: ubuntu-latest
