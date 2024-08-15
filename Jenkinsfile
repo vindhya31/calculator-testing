@@ -16,5 +16,8 @@ pipeline {
                 bat "npm run test:integration"
             }
         }
+        stage("deploy") {
+
+        }
     }
 }
