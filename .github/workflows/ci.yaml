@@ -9,19 +9,21 @@ on:
 # what to do when triggered
 
 jobs:
-  runs-on: ubuntu-latest
   install:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: install dependencies
         run: npm install
   unit:
     needs: install
+    runs-on: ubuntu-latest
     steps:
       - name: unit test
         run: npm run test:unit
   integration:
     needs: install
+    runs-on: ubuntu-latest
     steps:
       - name: integration test
         run: npm run test:integration
