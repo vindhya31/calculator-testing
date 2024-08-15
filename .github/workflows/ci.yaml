@@ -1,0 +1,17 @@
+name: CI
+
+# triggers
+on: push
+
+# what to do when triggered
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: install dependencies
+        run: npm install
+      - name: unit test
+        run: npm run test:unit
+      - name: integration test
+        run: npm run test:integration
